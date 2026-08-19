@@ -54,15 +54,14 @@
                     qualquer momento, será possível editar ou remover tais dados. <a href="https://www.ford.com.br/politica-de-privacidade/
                 ">Termos e Condições.</a></p>
                 <br>
-                <input type="checkbox">
+                <input type="checkbox" id="termos" onchange="validarTermos()">
                 <label for="">Sim. Li e concordo com os Termos e Condições. </label>
                 <br>
-                <br>
-                <input type="checkbox">
+                <input type="checkbox" id="descontos" disabled>
                 <label for=""> Sim. Também quero receber descontos e novidades. </label>
                 </div>
                 <br>
-            <button type="submit">Enviar</button>
+            <button type="submit" id="btnEnviar" disabled>Enviar</button>
             </form>
             </div>
             
