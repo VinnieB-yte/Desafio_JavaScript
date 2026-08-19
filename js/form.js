@@ -34,6 +34,8 @@ class contato {
             Enviar(data.nome);
 
             form.reset();
+
+            validarTermos();
   
 }
 
@@ -46,4 +48,24 @@ function Enviar(nome) {
 }
 
 
+function validarTermos() {
 
+    const termos = document.getElementById("termos");
+    const descontos = document.getElementById("descontos");
+    const btnEnviar = document.getElementById("btnEnviar");
+
+    if (termos.checked) {
+
+        descontos.disabled = false;
+        btnEnviar.disabled = false;
+
+    } else {
+
+        descontos.checked = false;
+        descontos.disabled = true;
+        btnEnviar.disabled = true;
+
+    }
+
+
+}

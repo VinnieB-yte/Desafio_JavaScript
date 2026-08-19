@@ -36,6 +36,13 @@ main div {
     text-align: center;
 }
 
+.divForm {
+
+    width: 312px;
+    margin-left: 8px;
+
+}
+
 h2 {
     text-align: left;
     font-weight: 800;
